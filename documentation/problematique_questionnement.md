@@ -2,9 +2,9 @@
 
 ## Problématique
 
-En adoptant une démarche exploratoire, il s'agit de proposer un modèle du champ scientifique de l'astronomie (cf. la [notion de champ](https://fr.wikipedia.org/wiki/Champ_(sociologie)) de Pierre Bourdieu), c'est-à-dire une représentation simplifiée de la structure du domaine disciplinaire astronomique et de son évolution dans le temps. On s'intéressera aux profils socio-démographiques et aux positions intellectuelles des agents, ainsi que leurs appartenances aux organisations, et les réseaux de relations entre acteurs et organisations qui en résultent. Nous nous efforcerons également de proposer un modèle d'évolution de cette structure dans le temps. Par ailleurs, dans le cadre d'une approche prosopographique, nous collecterons systématiquement les caractéristiques des agents afin de mettre en évidence des profils biographiques et d'activité.
+En adoptant une démarche exploratoire, il s'agit de proposer un modèle du champ scientifique des astronautes (cf. la [notion de champ](https://fr.wikipedia.org/wiki/Champ_(sociologie)) de Pierre Bourdieu), c'est-à-dire une représentation simplifiée de la structure du domaine disciplinaire astronomique et de son évolution dans le temps. On s'intéressera aux profils socio-démographiques et aux positions intellectuelles des agents, ainsi que leurs appartenances aux organisations, et les réseaux de relations entre acteurs et organisations qui en résultent. Nous nous efforcerons également de proposer un modèle d'évolution de cette structure dans le temps. Par ailleurs, dans le cadre d'une approche prosopographique, nous collecterons systématiquement les caractéristiques des agents afin de mettre en évidence des profils biographiques et d'activité.
 
-## Questions de recerche
+## Questions de recherche
 
 * Y a-t-il une corrélation ou une spécificité des disciplines et sous-disciplines (branches disciplinaires) en fonction des origines sociales, de la position sociale atteinte, du pays d'origine ou de la génération?
 * Y a-t-il une relation entre métiers en lien avec les disciplines (enseignant, constructuers d'instruments, etc.) et les caractéristiques socio-démographiques?
