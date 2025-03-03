@@ -6,12 +6,9 @@ En adoptant une démarche exploratoire, il s'agit de proposer un modèle du cham
 
 ## Questions de recherche
 
-* Y a-t-il une corrélation ou une spécificité des disciplines et sous-disciplines (branches disciplinaires) en fonction des origines sociales, de la position sociale atteinte, du pays d'origine ou de la génération?
-* Y a-t-il une relation entre métiers en lien avec les disciplines (enseignant, constructuers d'instruments, etc.) et les caractéristiques socio-démographiques?
-* Quelle est l'évolution de l'appartenance aux organisations ou mouvances plus informelles — là égalément en relation avec les facteurs socio-démographiques?
-* Quelles relations structurantes on observe entre organisations, quelle évolution dans le temps?
-* Quelles influences de filiation intellectuelle ou de métier, ou rapports maître-élève ou hiérarchiques, structurent le champ dans son évolution temporelle? Voit-on apparaître des écoles ou des mouvements?
-* Comment les facteurs socio-démographiques et les autres aspects structurels du champ influencent / résultent de la sphère des publications (genres littéraires, thématiques, éditeurs, etc.)?
+* Y a-t-il une certaine nationalité qui a été plus affectée sur certains type de missions
+* Quand et pourquoi le profil des astronautes ont commencé à passer de cowboys à scientifiques
+* 
 
 
 ## Aspects de l'information à collecter
