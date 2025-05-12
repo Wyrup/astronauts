@@ -1,3 +1,39 @@
+### JSP 
+```sparql
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+
+CONSTRUCT 
+        {?item  rdfs:label ?itemLabel.
+           ?item wdt:P21 ?gender.
+           ?item wdt:P569 ?year.
+           # ?item  wdt:P31 wd:Q5.
+           # Noter qu'on odifie pour disposer de la propriété standard
+           # pour déclarer l'appartenance d'une instance à une classe
+           ?item  rdf:type wd:Q5. }
+        
+        WHERE {
+
+        ## note the service address            
+            {
+            {?item wdt:P106 wd:Q11631}  # astronauts   
+          
+            ?item wdt:P31 wd:Q5;  # Any instance of a human.
+                wdt:P569 ?birthDate;
+                wdt:P21 ?gender.
+        BIND(year(?birthDate) as ?year)
+        #BIND(xsd:integer(REPLACE(str(?birthDate), "(.*)([0-9]{4})(.*)", "$2")) AS ?year)
+        FILTER(?year > 1900  && ?year < 2001) 
+
+        ## Add this clause in order to fill the variable      
+        BIND ( ?itemLabel as ?itemLabel)
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }   
+        }
+        }
+```
+
 ## Import to Allegrograph
 
 In this notebook we describe the steps of data import to your Allegrograph repository.
