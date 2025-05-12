@@ -1,8 +1,8 @@
 # Requêtes sparql
 
-```sparql
-### Most common occupations among astronauts (besides being an astronaut)
 
+### Most common occupations among astronauts (besides being an astronaut)
+```sparql
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
@@ -17,9 +17,9 @@ WHERE {
 GROUP BY ?occupation ?occupationLabel
 ORDER BY DESC(?count)
 LIMIT 20
-
+```
 ### Sexe distribution among the astronauts
-
+```sparql
 SELECT ?sexLabel (COUNT(*) AS ?n)
 WHERE {
   ?person wdt:P106 wd:Q11631;
@@ -28,9 +28,9 @@ WHERE {
 }
 GROUP BY ?sexLabel
 ORDER BY DESC(?n)
-
+```
 ### Nationality distribution among the astronauts
-
+```sparql
 SELECT ?countryLabel (COUNT(*) AS ?n)
 WHERE {
   ?person wdt:P106 wd:Q11631;
@@ -39,9 +39,9 @@ WHERE {
 }
 GROUP BY ?countryLabel
 ORDER BY DESC(?n)
-
+```
 ### Most frequented educational school
-
+```sparql
 SELECT ?educationLabel (COUNT(*) AS ?n)
 WHERE {
   ?person wdt:P106 wd:Q11631;
@@ -50,9 +50,9 @@ WHERE {
 }
 GROUP BY ?educationLabel
 ORDER BY DESC(?n)
-
+```
 ### Which organisation does the astronauts belongs to
-
+```sparql
 SELECT ?orgLabel (COUNT(*) AS ?n)
 WHERE {
   ?person wdt:P106 wd:Q11631;
