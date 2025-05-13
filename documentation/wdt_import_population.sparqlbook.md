@@ -145,7 +145,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 INSERT {
 
         ### Note that the data is imported into a named graph and not the DEFAULT one
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item  rdfs:label ?itemLabel.
            ?item wdt:P21 ?gender.
            ?item wdt:P569 ?year. 
