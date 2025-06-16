@@ -318,7 +318,7 @@ WHERE {
     GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s wdt:P21 ?gen;
             wdt:P569 ?birthDate.
-        FILTER (?birthDate < '1900')     
+        FILTER (?birthDate < '1969')     
           }
 }
 GROUP BY ?gen
