@@ -10,7 +10,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 SELECT (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q5.}
 }
 
@@ -22,7 +22,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 SELECT ?s ?label ?birthYear
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q5;
             rdfs:label ?label;
             wdt:P569 ?birthYear}
@@ -85,7 +85,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 SELECT ?occupation ?occupationLabel (COUNT(*) as ?n)
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 
         ## Find the persons in the imported graph
         {SELECT ?item
@@ -128,7 +128,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 SELECT ?item ?birthYear ?occupation ?occupationLabel ?occupation_1 ?occupation_1Label
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 
         ## Find the persons in the imported graph
         {SELECT ?item ?birthYear
@@ -211,7 +211,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 INSERT {?item wdt:P106 ?occupation.
          ?occupation rdfs:label ?occupationLabel}
 WHERE
@@ -247,7 +247,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 
 INSERT DATA {
-  GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+  GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
   {wdt:P106 rdfs:label 'occupation'.}
 }
 ```
@@ -269,7 +269,7 @@ WHERE
    {
    SELECT DISTINCT ?occupation
    WHERE {
-      GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+      GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
          {
             ?s wdt:P106 ?occupation.
          }
@@ -286,7 +286,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 INSERT {
    ?occupation rdf:type wd:Q12737077.
 }
@@ -310,7 +310,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 INSERT DATA {
-GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
     {    wd:Q12737077 rdfs:label "Occupation".
     }    
 }
@@ -332,7 +332,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?occupation ?occupationLabel (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item wdt:P106 ?occupation.
         OPTIONAL {?occupation rdfs:label ?occupationLabel}    
           }
@@ -356,7 +356,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 
 SELECT (COUNT(*) as ?n)
 WHERE {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item a wd:Q12737077.}
         }
          
@@ -418,7 +418,7 @@ CONSTRUCT {
     }
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         ## Find the persons in the imported graph
         {SELECT ?item
         WHERE 
@@ -466,7 +466,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 
 INSERT DATA {
-  GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+  GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
   {wdt:P279 rdfs:label 'subclass of'.}
 }
 ```
@@ -485,7 +485,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 INSERT {
     ?item  wdt:P279 ?occupation.
     ?occupation rdfs:label ?occupationLabel.
@@ -529,7 +529,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?p ?label (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q12737077;
             ?p ?o.
         OPTIONAL {?p rdfs:label ?label}    
@@ -550,7 +550,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?birthYear ?o ?oLabel ?p ?o1 ?o1Label
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item a wd:Q5;
             wdt:P569 ?birthYear;
             wdt:P106 ?o.
@@ -578,7 +578,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parentOccupation ?parentOccupationlabel (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q5.
         
         # ?s wdt:P106 ?occupation.
@@ -609,7 +609,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parentOccupation ?parentOccupationlabel (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q5.
         
         ## property path:
@@ -640,7 +640,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parentOccupation ?parentOccupationlabel (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q5.
         
         ## property path:
@@ -670,7 +670,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parentOccupation ?parentOccupationlabel (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q5.
         
         ## property path:
@@ -708,7 +708,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?parentOccupation ?parentOccupationlabel (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q5.
         
         ## property path:
@@ -746,7 +746,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?s ?o ?oClass
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {
             ## retrieves all the classifications:
             ?s wdt:P279 ?o.
@@ -767,7 +767,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 # Protection #  DELETE {?s  wdt:P279 ?o .
     ?o rdfs:label ?occupationLabel.
     # rdf:type Occupation
@@ -797,7 +797,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 SELECT ?occupation ?occupationLabel ?metaclass ?metaclassLabel ?n
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         ## Find the persons in the imported graph
         {SELECT ?occupation ?occupationLabel (COUNT(*) as ?n)
         WHERE 
@@ -848,7 +848,7 @@ SELECT ?occupation ?occupationLabel
           ?parentKnowledgeClassification ?parentKnowledgeClassificationLabel
           (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {SELECT ?occupation ?occupationLabel
           ?parentOccupation ?parentOccupationlabel 
           ?parentKnowledgeClassification ?parentKnowledgeClassificationLabel
@@ -907,7 +907,7 @@ SELECT DISTINCT
           #?parentKnowledgeClassification ?parentKnowledgeClassificationLabel 
           # (SUM(?n) as ?sn)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {
           SELECT ?occupation ?occupationLabel
           ?parentOccupation (COUNT(*) as ?n)
@@ -965,7 +965,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 SELECT ?item ?birthYear ?occupation ?occupationLabel ?occupation_1 ?occupation_1Label
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 
         ## Find the persons in the imported graph
         {SELECT ?item ?birthYear
