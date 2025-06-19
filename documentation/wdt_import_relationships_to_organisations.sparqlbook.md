@@ -10,7 +10,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 SELECT (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q5.}
 }
 
@@ -22,7 +22,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 SELECT ?s ?label ?birthYear
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?s a wd:Q5;
             rdfs:label ?label;
             wdt:P569 ?birthYear}
@@ -46,7 +46,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 SELECT ?item ?birthYear ?organisation ?organisationLabel 
 WHERE
     {
-         GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+         GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
    
         ## Find the persons in the imported graph
         {SELECT ?item ?birthYear
@@ -88,7 +88,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 SELECT ?organisation ?organisationLabel (COUNT(*) as ?n)
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 
         ## Find the persons in the imported graph
         {SELECT ?item
@@ -131,7 +131,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 SELECT ?item ?itemLabel  ?organisation ?organisationLabel (COUNT(*) as ?n)
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 
         ## Find the persons in the imported graph
         {SELECT ?item ?itemLabel
@@ -177,7 +177,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 SELECT ?organisation ?organisationLabel (COUNT(*) as ?n)
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 
         ## Find the persons in the imported graph
         {SELECT ?item
@@ -261,7 +261,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 INSERT {?item wdt:P108 ?organisation.
          ?organisation rdfs:label ?organisationLabel}
 WHERE
@@ -301,7 +301,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?organisation ?organisationLabel (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item wdt:P108 ?organisation.
          ?organisation rdfs:label ?organisationLabel
          }    
@@ -326,7 +326,7 @@ SELECT (COUNT(*) as ?n)
 WHERE {
         SELECT DISTINCT ?organisation ?organisationLabel 
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item wdt:P108 ?organisation.
          ?organisation rdfs:label ?organisationLabel
          }    
@@ -345,7 +345,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 
 INSERT DATA {
-  GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+  GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
   {wdt:P108 rdfs:label 'has employer'.}
 }
 ```
@@ -405,7 +405,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 INSERT {?item wdt:P463 ?organisation.
          ?organisation rdfs:label ?organisationLabel}
 WHERE
@@ -445,7 +445,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?organisation ?organisationLabel (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item wdt:P463 ?organisation.
          ?organisation rdfs:label ?organisationLabel
          }    
@@ -470,7 +470,7 @@ SELECT (COUNT(*) as ?n)
 WHERE {
         SELECT DISTINCT ?organisation ?organisationLabel 
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item wdt:P463 ?organisation.
          ?organisation rdfs:label ?organisationLabel
          }    
@@ -489,7 +489,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 
 INSERT DATA {
-  GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+  GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
   {wdt:P463 rdfs:label 'is member of'.}
 }
 ```
@@ -553,7 +553,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 INSERT {?item wdt:P69 ?organisation.
          ?organisation rdfs:label ?organisationLabel}
 WHERE
@@ -593,7 +593,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?organisation ?organisationLabel (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item wdt:P69 ?organisation.
          ?organisation rdfs:label ?organisationLabel
          }    
@@ -618,7 +618,7 @@ SELECT (COUNT(*) as ?n)
 WHERE {
         SELECT DISTINCT ?organisation ?organisationLabel 
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item wdt:P69 ?organisation.
          ?organisation rdfs:label ?organisationLabel
          }    
@@ -637,7 +637,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 
 INSERT DATA {
-  GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+  GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
   {wdt:P69 rdfs:label 'was educated at'.}
 }
 ```
@@ -668,7 +668,7 @@ WHERE
    {
    SELECT DISTINCT ?organisation
    WHERE {
-      GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+      GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
          {
             ?s wdt:P108|wdt:P463|wdt:P69 ?organisation.
          }
@@ -685,7 +685,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 INSERT {
    ?organisation rdf:type <http://www.cidoc-crm.org/cidoc-crm/E74_Group>.
 }
@@ -709,7 +709,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 INSERT DATA {
-GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
     {    <http://www.cidoc-crm.org/cidoc-crm/E74_Group> rdfs:label "Organisation".
     }    
 }
@@ -736,7 +736,7 @@ PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 
 SELECT (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item rdf:type crm:E74_Group.
         OPTIONAL {?item rdfs:label ?itemLabel}    
           }
@@ -756,7 +756,7 @@ PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 
 SELECT (COUNT(*) as ?n)
 WHERE {
-    GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+    GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item rdf:type crm:E74_Group.
         OPTIONAL {?item rdfs:label ?itemLabel}    
           }
@@ -785,7 +785,7 @@ WHERE {
             WHERE {
                 {SELECT DISTINCT ?item
                 WHERE {
-                        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+                        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
                     {?item rdf:type crm:E74_Group }        
                 }
                 LIMIT 3000
@@ -835,7 +835,7 @@ SELECT ?country ?countryLabel (COUNT(*) as ?n)
 WHERE {
     {SELECT DISTINCT ?item
     WHERE {
-            GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+            GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item rdf:type crm:E74_Group }        
     }
     LIMIT 3000
@@ -875,7 +875,7 @@ CONSTRUCT {?item wdt:P17 ?country.
             rdfs:label ?countryLabel}
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 
         ## Find the organisations in the imported graph
         {SELECT ?item
@@ -911,7 +911,7 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 INSERT {?item wdt:P17 ?country.
         ?country a wd:Q6256;
             rdfs:label ?countryLabel}
@@ -942,7 +942,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 
 INSERT DATA {
-  GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+  GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
   {wdt:P17 rdfs:label 'has organisation country'.}
 }
 ```
@@ -967,7 +967,7 @@ SELECT ?groupType ?groupTypeLabel (COUNT(*) as ?n)
 WHERE {
     {SELECT DISTINCT ?item
     WHERE {
-            GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+            GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item rdf:type crm:E74_Group }        
     }
     LIMIT 3000
@@ -1010,7 +1010,7 @@ CONSTRUCT {
             }
 WHERE
     {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 
         ## Find the organisations in the imported graph
         {SELECT ?item
@@ -1053,7 +1053,7 @@ PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX crm-sup: <https://sdhss.org/ontology/crm-supplement/>
 
 
-WITH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+WITH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
 INSERT {
             ?item wdt:P31 ?groupType.
             ?groupType a crm-sup:C9;
@@ -1090,7 +1090,7 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 
 INSERT DATA {
-  GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+  GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
   {wdt:P31 rdfs:label 'instance of'.}
 }
 ```
@@ -1104,7 +1104,7 @@ PREFIX crm-sup: <https://sdhss.org/ontology/crm-supplement/>
 
 
 INSERT DATA {
-  GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+  GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
   {crm-sup:C9 rdfs:label 'Group Type'.}
 }
 ```
@@ -1129,7 +1129,7 @@ SELECT ?item ?coordinates
 WHERE {
     {SELECT DISTINCT ?item
     WHERE {
-            GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+            GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {?item rdf:type crm:E74_Group }        
     }
     LIMIT 30
@@ -1175,7 +1175,7 @@ SELECT ?person (MIN(?pLabel) AS ?personLabel)
         #(GROUP_CONCAT(DISTINCT ?countryLabel; separator=" | ") AS ?countries) 
 
 WHERE {
-        GRAPH <https://github.com/Sciences-historiques-numeriques/astronomers/blob/main/graphs/wikidata-imported-data.md>
+        GRAPH <https://github.com/Wyrup/astronauts/blob/main/documentation/graphs/wikidata_imported_data.md>
         {
         {?person a wd:Q5;
            rdfs:label ?pLabel;
