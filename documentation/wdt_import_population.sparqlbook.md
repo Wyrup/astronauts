@@ -1,4 +1,4 @@
-### JSP 
+### Sparqlbook use to import data to a graph
 ```sparql
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
