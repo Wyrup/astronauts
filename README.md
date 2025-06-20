@@ -1,21 +1,40 @@
-# Astronauts
+# Astronauts — Données et analyses
 
-## Base de données RDF [Voir ici](https://github.com/Wyrup/astronauts/blob/main/documentation/data/astronauts.xml)
+Ce fichier rassemble l'ensemble des documents qui sont dans les objectifs de l'évaluation.
 
-## Export de la base de données [Voir ici](https://github.com/Wyrup/astronauts/blob/main/documentation/data/astronauts_export.zip)
+---
 
-## Catalogue de questions et objectifs [Voir ici](https://github.com/Wyrup/astronauts/blob/main/documentation/problematique_questionnement.md)
+## Données
 
-## Liste d'informations disponibles [Voir ici](https://github.com/Wyrup/astronauts/blob/main/documentation/CSV/query_properties.csv)
+- **Base de données RDF**  
+  [Voir le fichier XML](https://github.com/Wyrup/astronauts/blob/main/documentation/data/astronauts.xml)
 
-## Documentation du code SPARQL [Voir ici](https://github.com/Wyrup/astronauts/blob/main/documentation/wdt_import_population.sparqlbook.md)
+- **Export compressé de la base**  
+  [Télécharger le ZIP](https://github.com/Wyrup/astronauts/blob/main/documentation/data/astronauts_export.zip)
 
-## Notebook Jupyter 
-[Voir ici](https://github.com/Wyrup/astronauts/blob/main/documentation/wdt_distribution_naissances_triplestore.ipynb)
-[Voir ici](https://github.com/Wyrup/astronauts/blob/main/documentation/wdt_bivariee_generations_continents_triplestore.ipynb)
-[Voir ici](https://github.com/Wyrup/astronauts/blob/main/documentation/wdt_persons_organisations_networks.ipynb)
+---
 
-## Pages d'analyse 
-[Voir ici]()
-[Voir ici]()
-[Voir ici]()
+## Problématiques et documentation
+
+- **Catalogue des questions de recherche**  
+  [Voir les questions et objectifs](https://github.com/Wyrup/astronauts/blob/main/documentation/problematique_questionnement.md)
+
+- **Liste des propriétés SPARQL disponibles**  
+  [Voir le CSV des propriétés](https://github.com/Wyrup/astronauts/blob/main/documentation/CSV/query_properties.csv)
+
+- **Documentation SPARQL**  
+  [Voir le fichier `.sparqlbook.md`](https://github.com/Wyrup/astronauts/blob/main/documentation/wdt_import_population.sparqlbook.md)
+
+---
+
+## Notebooks d’analyse
+
+- [Répartition par année de naissance](https://github.com/Wyrup/astronauts/blob/main/documentation/wdt_distribution_naissances_triplestore.ipynb)
+- [Analyse bivariée génération & continent](https://github.com/Wyrup/astronauts/blob/main/documentation/wdt_bivariee_generations_continents_triplestore.ipynb)
+- [Réseaux d'organisations et parcours](https://github.com/Wyrup/astronauts/blob/main/documentation/wdt_persons_organisations_networks.ipynb)
+
+---
+
+## Pages d’analyse synthétiques
+
+- [Voir la synthèse des analyses en Markdown](https://github.com/Wyrup/astronauts/blob/main/documentation/analyse.md)
